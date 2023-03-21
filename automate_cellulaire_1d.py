@@ -38,8 +38,8 @@ for num_config in range(nombre_cas):
     compute_time += t2 - t1
 
     t1 = time.time()
-    save_as_md(cells)
-#    save_as_png(cells)
+#    save_as_md(cells)
+    save_as_png(cells)
     t2 = time.time()
     display_time += t2 - t1
 

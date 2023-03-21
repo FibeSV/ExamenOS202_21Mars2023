@@ -16,8 +16,14 @@ Les versions séquentielles des programmes à paralléliser se trouvent avec le 
 Dans le fichier texte qui accompagne votre travail, répondez aux questions suivantes :
 
 - Quel est le nombre de coeurs physiques de votre machine ?
+6
+
 - Quel est le nombre de coeurs logiques de votre machine  ?
+12
+
 - Quelle est la quantité de mémoire cache L2 et L3 de votre machine ?
+cache L2: 3,0 MB
+cache L3: 16,0 MB
 
 ## Automate cellulaire 1D
 
