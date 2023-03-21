@@ -67,7 +67,12 @@ Pour chaque diagramme calculé, on créée une image ``resultat_*.png`` représe
 
 1. Paralléliser avec MPI le code afin de pouvoir créer l'ensemble des images illustrant les différents diagrammes suivant chacun une règle différente. Justifier dans votre code votre stratégie de parallélisation (statique contre dynamique, à quel niveau j'ai parallélisé, etc.).
 
+Le choix de la stratégie de parallélisation dépend du problème spécifique à résoudre et des caractéristiques des ressources informatiques utilisées. Dans ce cas, la parallélisation statique est une solution appropriée car le nombre d'automates cellulaires à générer et à afficher est connu avant l'exécution, et les sous-tâches peuvent être réparties de manière équitable entre les cœurs de calcul disponibles. Cela permet une utilisation efficace des ressources disponibles et évite les surcharges potentielles de communication qui peuvent survenir avec la parallélisation dynamique.
+
+En outre, la mise en œuvre de la parallélisation statique dans ce code est relativement simple et facile à comprendre, ce qui peut être un avantage lors du développement et du débogage de programmes parallèles.
+
 2. Créer une courbe donnant l'accélération obtenue avec votre parallélisation (jusqu'à la limite du nombre de coeur physique présent sur votre ordinateur).
+![l'accélération](speed-up.png "l'accélération")
 
 **Remarque** : Pour vérifier si les images contiennent des erreurs ou non, on peut vérifier que les fichiers images sont les mêmes qu'avec le code séquentiel en utilisant :
 
